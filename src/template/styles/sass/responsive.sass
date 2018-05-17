@@ -1,13 +1,375 @@
+@media screen and (max-width: 1485px)
+	.case
+		&_more
+			width: 1170px
+
 @media screen and (max-width: 1199px)
 	.case
 		width: 950px
 
+	.banner
+		margin-top: 137px
+	.stat
+		&__imgs
+			&-item
+				width: 50%
 
-@media screen and (max-width: 970px)
+		&__data
+			padding-left: 0
+			&-wrap
+				order: 2
+				width: 100%
+				margin-top: 0
+			&-img
+				order: 1
+				width: 100%
+				img
+					margin-left: auto
+					margin-right: auto
+			
+	.vending
+		&__data
+			&-img
+				width: 400px
+
+	.maintitle, .title, .subtitle
+		br
+			display: none
+	.advantages
+		&__img
+			width: 100%
+			img
+				margin-left: auto
+				margin-right: auto
+		&__data
+			width: 100%
+			padding-right: 0
+			br
+				display: none
+			
+	.partners
+		&__table
+			padding-left: 0
+			padding-right: 0
+
+	.plans
+		padding-left: 0
+		padding-right: 0
+
+	.popup
+		padding: 30px
+		&__col
+			&:nth-of-type(1)
+				padding-right: 15px
+			&:nth-of-type(2)
+				padding-left: 15px
+			
+	.input
+		input
+			height: 50px
+			padding-left: 40px
+			font-size: 20px
+		.icon
+			top: 15px
+			left: 10px
+
+	.textarea
+		textarea
+			height: 202px
+			padding: 10px 30px 10px 40px
+		.icon
+			top: 15px
+			left: 10px
+			
+
+
+@media screen and (max-width: 992px)
 	.case
 		width: 750px
 
 
+	.banner
+		background-position: 0 0
+		&__wrap
+			max-width: 450px
+			margin-left: auto
+			margin-right: auto
+
+	.vending
+		&__data
+			&-text
+				width: 100%
+			&-img
+				display: none
+	.about
+		padding-bottom: 40px
+	.mashine
+		width: 100%
+		&__img
+			margin-bottom: 15px
+			img
+				left: 0
+			
+		&__title, &__item
+			position: relative !important
+			top: auto !important
+			left: auto !important
+			right: auto !important
+			width: auto !important
+
+		&__title
+			margin-bottom: 10px
+			
+		&__block
+			margin-bottom: 15px
+			
+		&__item
+			padding-left: 25px
+			span
+				width: 100% !important
+				padding-left: 0 !important
+				margin-left: 0 !important
+			&:after
+				display: none
+
+
+
+			
 @media screen and (max-width: 767px)
+	body
+		font-size: 18px
+	ul
+		li
+			font-size: 18px
 	.case
 		width: 100%
+
+	.panel
+		padding-bottom: 21px
+		position: relative
+		&__wrap
+			display: block
+			
+		&__logos
+			img
+				display: block
+				margin-left: auto !important
+				margin-right: auto !important
+				margin-bottom: 10px
+	
+	.panel
+		text-align: center
+		&__contact
+			margin-left: 0
+			&s
+				display: block
+
+
+	.banner
+		margin-top: 0
+		background-size: cover
+		&__title
+			display: none
+
+		&__pack
+			width: 100%
+			height: auto !important
+			background: none !important
+			margin-bottom: 50px
+			&-title
+				left: 0
+			&-wrap
+				padding-left: 0
+			&-price
+				margin-right: 0
+			&-btn
+				display: block
+				margin-left: 0
+			&-body
+				margin-top: 30px
+		&__desc
+			margin-top: 15px
+			text-align: center
+
+	.about
+		padding-top: 30px
+		padding-bottom: 30px
+		&__nav
+			ul
+				flex-direction: column
+			li
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 10px
+				&:last-of-type
+					margin-bottom: 0
+			a
+				&:after
+					margin-top: 0px
+
+		&__tabs
+			min-height: 1px
+			padding-top: 25px
+			
+	.lottery
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 25px
+		&__tree
+			margin-bottom: 25px
+			
+
+	.stat
+		padding-top: 25px
+		padding-bottom: 5px
+		&__title
+			margin-bottom: 25px
+		&__imgs
+			margin-bottom: 25px
+			&-item
+				width: 100%
+				margin-bottom: 10px
+				img
+					margin-left: auto
+					margin-right: auto
+
+		
+			
+			
+	.data
+		li
+			padding-top: 18px
+			padding-bottom: 18px
+			&:before
+				top: 24px
+
+	.vending
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 20px
+		&__subtitle
+			&_yellow
+				display: none
+
+		&__data
+			margin-bottom: 30px
+			
+	.partners
+		padding-top: 25px
+		&__title
+			margin-bottom: 25px
+
+	.partners, .plans
+		&__item
+			padding-left: 0 !important
+			padding-right: 0 !important
+			width: 100% !important
+
+	.plans
+		margin-bottom: 10px
+		&__item
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+			
+	.partners
+		padding-bottom: 40px
+			
+
+	.addresses
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 25px
+		&__order
+			margin-top: 0
+			
+	.sensis
+		margin-top: 30px
+		&__head
+			display: none
+		&__body
+			padding-bottom: 0px
+			line-height: 26px
+			text-indent: 15px
+			
+			
+			
+	.maintitle, .title, .subtitle
+		text-align: center		
+
+	.maintitle
+		font-size: 30px
+
+	.title
+		font-size: 26px
+
+	.subtitle
+		font-size: 24px
+
+	.footer
+		padding-top: 20px
+		padding-bottom: 25px
+		background-size: cover
+		&__logos
+			display: block
+			margin-bottom: 10px
+			img
+				display: block
+				margin-left: auto !important
+				margin-right: auto !important
+				margin-bottom: 15px
+
+			
+		&__contact
+			margin-bottom: 15px
+			font-size: 18px
+			&s
+				text-align: center
+			
+	.popup
+		&__col
+			width: 100% !important
+			padding-left: 0 !important
+			padding-right: 0 !important
+
+		&__btn
+			margin-top: 20px
+			height: 60px
+			line-height: 60px
+
+		.fancybox-close-small
+			width: 35px
+			height: 35px
+			padding: 0
+
+
+	.plans
+		&__head
+			padding: 12px 15px
+
+	
+
+
+			
+			
+
+@media screen and (max-width: 525px)
+	.stat
+		&__data
+			&-wrap
+				span
+					padding-right: 0
+				span, strong
+					width: 100%
+					text-align: left
+
+@media screen and (max-width: 450px)
+	.video
+		text-align: center
+		iframe
+			height: 200px

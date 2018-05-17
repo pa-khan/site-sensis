@@ -1,0 +1,59 @@
+.icon-card {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 46px;
+  height: 26px; }
+
+.icon-check {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -26px;
+  width: 28px;
+  height: 28px; }
+
+.icon-comment {
+  background-image: url(../../img/sprite.png);
+  background-position: -28px -26px;
+  width: 22px;
+  height: 22px; }
+
+.icon-email {
+  background-image: url(../../img/sprite.png);
+  background-position: -92px -37px;
+  width: 14px;
+  height: 12px; }
+
+.icon-mail {
+  background-image: url(../../img/sprite.png);
+  background-position: -50px -26px;
+  width: 22px;
+  height: 22px; }
+
+.icon-marker {
+  background-image: url(../../img/sprite.png);
+  background-position: -92px 0px;
+  width: 16px;
+  height: 24px; }
+
+.icon-pay {
+  background-image: url(../../img/sprite.png);
+  background-position: -46px 0px;
+  width: 46px;
+  height: 21px; }
+
+.icon-persona {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -54px;
+  width: 22px;
+  height: 22px; }
+
+.icon-phone {
+  background-image: url(../../img/sprite.png);
+  background-position: -92px -24px;
+  width: 13px;
+  height: 13px; }
+
+.icon-smartphone {
+  background-image: url(../../img/sprite.png);
+  background-position: -22px -54px;
+  width: 22px;
+  height: 22px; }

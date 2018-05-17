@@ -1,0 +1,176 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$card-name: 'card'
+$card-x: 0px
+$card-y: 0px
+$card-offset-x: 0px
+$card-offset-y: 0px
+$card-width: 46px
+$card-height: 26px
+$card-total-width: 108px
+$card-total-height: 76px
+$card-image: 'sprite.png'
+$card: (0px, 0px, 0px, 0px, 46px, 26px, 108px, 76px, 'sprite.png', 'card', )
+$check-name: 'check'
+$check-x: 0px
+$check-y: 26px
+$check-offset-x: 0px
+$check-offset-y: -26px
+$check-width: 28px
+$check-height: 28px
+$check-total-width: 108px
+$check-total-height: 76px
+$check-image: 'sprite.png'
+$check: (0px, 26px, 0px, -26px, 28px, 28px, 108px, 76px, 'sprite.png', 'check', )
+$comment-name: 'comment'
+$comment-x: 28px
+$comment-y: 26px
+$comment-offset-x: -28px
+$comment-offset-y: -26px
+$comment-width: 22px
+$comment-height: 22px
+$comment-total-width: 108px
+$comment-total-height: 76px
+$comment-image: 'sprite.png'
+$comment: (28px, 26px, -28px, -26px, 22px, 22px, 108px, 76px, 'sprite.png', 'comment', )
+$email-name: 'email'
+$email-x: 92px
+$email-y: 37px
+$email-offset-x: -92px
+$email-offset-y: -37px
+$email-width: 14px
+$email-height: 12px
+$email-total-width: 108px
+$email-total-height: 76px
+$email-image: 'sprite.png'
+$email: (92px, 37px, -92px, -37px, 14px, 12px, 108px, 76px, 'sprite.png', 'email', )
+$mail-name: 'mail'
+$mail-x: 50px
+$mail-y: 26px
+$mail-offset-x: -50px
+$mail-offset-y: -26px
+$mail-width: 22px
+$mail-height: 22px
+$mail-total-width: 108px
+$mail-total-height: 76px
+$mail-image: 'sprite.png'
+$mail: (50px, 26px, -50px, -26px, 22px, 22px, 108px, 76px, 'sprite.png', 'mail', )
+$marker-name: 'marker'
+$marker-x: 92px
+$marker-y: 0px
+$marker-offset-x: -92px
+$marker-offset-y: 0px
+$marker-width: 16px
+$marker-height: 24px
+$marker-total-width: 108px
+$marker-total-height: 76px
+$marker-image: 'sprite.png'
+$marker: (92px, 0px, -92px, 0px, 16px, 24px, 108px, 76px, 'sprite.png', 'marker', )
+$pay-name: 'pay'
+$pay-x: 46px
+$pay-y: 0px
+$pay-offset-x: -46px
+$pay-offset-y: 0px
+$pay-width: 46px
+$pay-height: 21px
+$pay-total-width: 108px
+$pay-total-height: 76px
+$pay-image: 'sprite.png'
+$pay: (46px, 0px, -46px, 0px, 46px, 21px, 108px, 76px, 'sprite.png', 'pay', )
+$persona-name: 'persona'
+$persona-x: 0px
+$persona-y: 54px
+$persona-offset-x: 0px
+$persona-offset-y: -54px
+$persona-width: 22px
+$persona-height: 22px
+$persona-total-width: 108px
+$persona-total-height: 76px
+$persona-image: 'sprite.png'
+$persona: (0px, 54px, 0px, -54px, 22px, 22px, 108px, 76px, 'sprite.png', 'persona', )
+$phone-name: 'phone'
+$phone-x: 92px
+$phone-y: 24px
+$phone-offset-x: -92px
+$phone-offset-y: -24px
+$phone-width: 13px
+$phone-height: 13px
+$phone-total-width: 108px
+$phone-total-height: 76px
+$phone-image: 'sprite.png'
+$phone: (92px, 24px, -92px, -24px, 13px, 13px, 108px, 76px, 'sprite.png', 'phone', )
+$smartphone-name: 'smartphone'
+$smartphone-x: 22px
+$smartphone-y: 54px
+$smartphone-offset-x: -22px
+$smartphone-offset-y: -54px
+$smartphone-width: 22px
+$smartphone-height: 22px
+$smartphone-total-width: 108px
+$smartphone-total-height: 76px
+$smartphone-image: 'sprite.png'
+$smartphone: (22px, 54px, -22px, -54px, 22px, 22px, 108px, 76px, 'sprite.png', 'smartphone', )
+$spritesheet-width: 108px
+$spritesheet-height: 76px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($card, $check, $comment, $email, $mail, $marker, $pay, $persona, $phone, $smartphone, )
+$spritesheet: (108px, 76px, 'sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
