@@ -5,4 +5,16 @@ $(document).ready(function($) {
 	$('.about').tabs();	
 
 	new WOW().init();
+
+	$('form').submit(function() {
+		$.ajax({
+		    type: "POST",
+		    url: "order.php",
+		    data: $(this).serialize()
+		}).done(function() {
+		    $.fancybox.close();
+		    $.fancybox.open({src  : '#popup-thanks',type : 'inline'});
+		});
+		return false;
+	});
 });

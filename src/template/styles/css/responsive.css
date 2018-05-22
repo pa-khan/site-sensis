@@ -73,9 +73,12 @@
   .banner {
     background-position: 0 0; }
     .banner__wrap {
+      padding-left: 0;
       max-width: 450px;
       margin-left: auto;
       margin-right: auto; }
+    .banner__title {
+      margin-left: 0; }
   .vending__data-text {
     width: 100%; }
   .vending__data-img {
@@ -135,22 +138,53 @@
     background-size: cover; }
     .banner__title {
       display: none; }
+    .banner__data br {
+      display: none; }
     .banner__pack {
       width: 100%;
       height: auto !important;
+      background: none;
+      margin-bottom: 50px;
+      -webkit-border-radius: 0 0 25px 25px;
+              border-radius: 0 0 25px 25px;
+      border: 2px solid #010101;
+      border-top: none;
       background: none !important;
-      margin-bottom: 50px; }
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+      .banner__pack.first {
+        margin-bottom: 30px; }
+      .banner__pack.last {
+        margin-bottom: 20px; }
       .banner__pack-title {
-        left: 0; }
+        left: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+        top: -7px; }
       .banner__pack-wrap {
-        padding-left: 0; }
+        padding-left: 0;
+        padding-bottom: 20px; }
+        .banner__pack-wrap:before, .banner__pack-wrap:after {
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 2px;
+          display: block;
+          background: #010101;
+          top: 0; }
+        .banner__pack-wrap:before {
+          left: 0; }
+        .banner__pack-wrap:after {
+          right: 0; }
       .banner__pack-price {
-        margin-right: 0; }
-      .banner__pack-btn {
-        display: block;
-        margin-left: 0; }
+        margin-right: 10px; }
+      .banner__pack-head {
+        text-align: center; }
       .banner__pack-body {
-        margin-top: 30px; }
+        padding-left: 10px;
+        margin-top: 20px; }
     .banner__desc {
       margin-top: 15px;
       text-align: center; }

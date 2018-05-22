@@ -91,9 +91,14 @@
 	.banner
 		background-position: 0 0
 		&__wrap
+			padding-left: 0
 			max-width: 450px
 			margin-left: auto
 			margin-right: auto
+
+		&__title
+			margin-left: 0
+			
 
 	.vending
 		&__data
@@ -171,22 +176,57 @@
 		&__title
 			display: none
 
+		&__data
+			br
+				display: none
+			
 		&__pack
 			width: 100%
 			height: auto !important
-			background: none !important
+			background: none
 			margin-bottom: 50px
+			border-radius: 0 0 25px 25px
+			border: 2px solid #010101
+			border-top: none
+			background: none !important
+			max-width: 280px
+			margin-left: auto
+			margin-right: auto
+			&.first
+				margin-bottom: 30px
+			&.last
+				margin-bottom: 20px
 			&-title
 				left: 0
+				text-align: center
+				width: 100%
+				font-size: 15px
+				top: -7px
+
 			&-wrap
 				padding-left: 0
+				padding-bottom: 20px
+				&:before, &:after
+					position: absolute
+					content: ''
+					width: 25px
+					height: 2px
+					display: block
+					background: #010101
+					top: 0
+				&:before
+					left: 0
+				&:after
+					right: 0
 			&-price
-				margin-right: 0
-			&-btn
-				display: block
-				margin-left: 0
+				margin-right: 10px
+			&-head
+				text-align: center
 			&-body
-				margin-top: 30px
+				padding-left: 10px
+				margin-top: 20px
+			&-btn
+				
 		&__desc
 			margin-top: 15px
 			text-align: center

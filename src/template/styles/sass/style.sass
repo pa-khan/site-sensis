@@ -146,7 +146,7 @@ img
 	background-color: #fff
 	padding-top: 21px
 	padding-bottom: 28px
-	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.26)
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
 	z-index: 100
 	&__logos
 		img
@@ -160,7 +160,7 @@ img
 		margin-left: 40px
 		font-size: 20px
 		font-weight: 700
-		text-transform: uppercase
+		text-transform: lowercase
 		a
 			display: inline-block
 			vertical-align: middle
@@ -176,13 +176,17 @@ img
 	padding-top: 30px
 	padding-bottom: 25px
 	margin-top: 100px
+	font-family: $font-family-2
+	&__wrap
+		padding-left: 30px
+		
 	&__data
 		margin-bottom: 17px
 		ul
 			flex-direction: column
 		li
-			font-size: 18px
-			padding-left: 53px
+			font-size: 16px
+			padding-left: 40px
 			margin-bottom: 19px
 			position: relative
 			&:before
@@ -190,15 +194,15 @@ img
 				position: absolute
 				top: 50%
 				left: 0
-				transform: translateY(-50%)
 				@include sprite($check)
+				margin-top: -3px
+				transform: scale(.7147) translateY(-50%)
 
 	&__pack
-		width: 451px
+		width: 400px
 		position: relative
-		background-position: 0 0
-		background-repeat: no-repeat
 		margin-bottom: 29px
+		background-size: 100% 100%
 		&.first
 			height: 92px
 			background-image: url('../../img/bg/border-one.png')
@@ -208,19 +212,21 @@ img
 			background-image: url('../../img/bg/border-two.png')
 		&-title
 			position: absolute
-			top: -15px
-			left: 56px
-			font-weight: 500
+			top: -9px
+			left: 50px
+			font-size: 17px
+			font-weight: 700
 
 		&-wrap
-			padding-left: 73px
+			padding-left: 30px
+			padding-top: 12px
 
 		&-price, &-btn
 			display: inline-block
 			vertical-align: middle
 		
 		&-price
-			font-size: 60px
+			font-size: 50px
 			font-weight: 700
 			padding-top: 8px
 			margin-right: 35px
@@ -229,10 +235,10 @@ img
 			width: 110px
 			height: 35px
 			position: relative
-			top: 8px
+			top: 3px
 			background: url('../../img/bg/btn-order.png')
 			&:hover
-				transform: scale(.8)
+				transform: scale(1.1)
 
 		&-body
 			margin-top: 10px
@@ -250,35 +256,13 @@ img
 				letter-spacing: 0.35px
 				font-family: $font-family-2
 	&__title
-		margin-bottom: 34px
-		span
-			position: relative
-			display: inline-block
-			font-size: 35px
-			font-weight: 700
-			text-transform: uppercase
-			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17)
-			background-color: #fff
-			padding: 2px 10px 6px
-			&:nth-of-type(1)
-				transform: rotate(3deg)
-			&:nth-of-type(2)
-				z-index: 2
-				margin-left: -12px
-				top: 5px
-				transform: rotate(-7deg)
-			&:nth-of-type(3)
-				display: block
-				width: 463px
-				font-size: 43px
-				margin-top: 5px
-				margin-left: 18px
-				transform: rotate(-3deg)
+		margin-bottom: 10px
+		margin-left: -30px
 
 		
 	&__desc
-		font-size: 22px
-		font-weight: 500
+		font-size: 16px
+		font-weight: 700
 		text-transform: uppercase
 		
 
@@ -324,6 +308,8 @@ img
 	&__data
 		max-width: 950px
 		border: 1px solid #000
+		margin-left: auto
+		margin-right: auto
 		&-title, &-subtitle
 			color: #fff
 			background-color: #000
@@ -380,14 +366,14 @@ img
 							background-image: url('../../img/bg/lines/line-1.png')
 					&:nth-of-type(2)
 						left: 0
-						top: 395px
+						top: 360px
 						&:after
 							width: 277px
 							height: 17px
 							background-image: url('../../img/bg/lines/line-2.png')
 					&:nth-of-type(3)
 						left: 0
-						top: 660px
+						top: 640px
 						&:after
 							width: 325px
 							height: 157px
@@ -429,14 +415,14 @@ img
 						padding-left: 0
 					
 					&:nth-of-type(1)
-						top: 543px
+						top: 500px
 						&:after
 							width: 295px
 							height: 88px
 							margin-top: -80px
 							background-image: url('../../img/bg/lines/line-6.png')
 					&:nth-of-type(2)
-						top: 660px
+						top: 650px
 						&:after
 							width: 295px
 							height: 157px
@@ -451,7 +437,7 @@ img
 			background-position: center
 			background-repeat: no-repeat
 		span
-			width: 162px
+			width: 200px
 			padding-left: 12px
 			display: block
 			font-size: 18px
@@ -701,6 +687,10 @@ img
 		line-height: 36px
 		padding-bottom: 52px
 		text-indent: 35px
+		p
+			margin-bottom: 15px
+			&:last-of-type
+				margin-bottom: 0
 		
 		
 .footer
@@ -729,6 +719,17 @@ img
 	display: none
 	width: 1140px
 	padding: 60px 90px 65px
+	&_thanks
+		width: 400px
+		text-align: center
+		padding: 20px
+		.popup
+			&__title
+				font-size: 30px
+				font-weight: 700
+				margin-bottom: 15px
+				text-align: center
+				
 	&__col
 		width: 50%
 		&:nth-of-type(1)
